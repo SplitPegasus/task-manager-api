@@ -18,7 +18,7 @@ namespace task_manager_api
         [Function("Function1")]
         public IActionResult Run([HttpTrigger(AuthorizationLevel.Function, "get", "post")] HttpRequest req)
         {
-            var connectionString = Environment.GetEnvironmentVariable("SqlConnectionString");
+            var connectionString = Environment.GetEnvironmentVariable("SQLCONNSTR_SqlConnectionString");
             _logger.LogInformation("C# HTTP trigger function processed a request.");
 
             return new OkObjectResult("Welcome to Azure Functions!" + connectionString);

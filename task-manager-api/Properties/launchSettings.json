@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "task_manager_api": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 7237",
+      "launchBrowser": false
+    }
+  }
+}

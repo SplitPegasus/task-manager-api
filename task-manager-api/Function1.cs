@@ -14,6 +14,7 @@ namespace task_manager_api
             _logger = logger;
         }
 
+        // This function responds to HTTP requests and returns a welcome message.
         [Function("Function1")]
         public IActionResult Run([HttpTrigger(AuthorizationLevel.Function, "get", "post")] HttpRequest req)
         {
